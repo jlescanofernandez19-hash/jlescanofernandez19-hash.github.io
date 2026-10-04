@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a Quote | LILIN Fire Protection</title>
+<meta name="description" content="Send your BOQ, drawings, specifications, or product requirements. LILIN Fire Protection reviews engineering and equipment requests and replies with a project-specific quotation.">
+<link rel="canonical" href="https://lilinfireprotection.com/request-a-quote.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap bar">
+ <a class="logo" href="/" aria-label="LILIN Fire Protection home"><b>LILIN</b><small>Fire Protection</small></a>
+ <button class="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+ <nav aria-label="Main"><ul id="nav-list">
+  <li><a href="/">Home</a></li>
+  <li><a href="/services/">Services</a></li>
+  <li><a href="/products/">Products</a></li>
+  <li><a href="/projects/">Projects</a></li>
+  <li><a href="/resources/">Resources</a></li>
+  <li><a href="/about/">About</a></li>
+  <li><a href="/contact/">Contact</a></li>
+  <li><a class="btn sm" href="/request-a-quote.html" aria-current="page">Request a Quote</a></li>
+ </ul></nav>
+</div></header>
+
+<main id="main">
+<div class="page-head"><div class="wrap">
+ <h1>Request a Quote</h1>
+ <p class="lead" style="margin-top:1rem">Tell us what you need. Whether you require engineering support, fire protection equipment, technical assistance, or a project-specific quotation, send us your requirements and our team will review them.</p>
+</div></div>
+
+<section><div class="wrap">
+<form class="rfq" id="rfq" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+ <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+ <input type="hidden" name="subject" value="New RFQ from lilinfireprotection.com">
+ <input type="hidden" name="from_name" value="LILIN Website RFQ">
+ <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+ <div><label for="name">Name</label><input id="name" name="name" required autocomplete="name"></div>
+ <div><label for="company">Company</label><input id="company" name="company" autocomplete="organization"></div>
+ <div><label for="country">Country</label><input id="country" name="country" required autocomplete="country-name"></div>
+ <div><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+ <div><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+ <div><label for="project">Project name</label><input id="project" name="project_name"></div>
+ <div><label for="location">Project location</label><input id="location" name="project_location"></div>
+ <div><label for="need">Service or product required</label>
+  <select id="need" name="service_or_product" required>
+   <option value="">Select one</option>
+   <optgroup label="Engineering services">
+    <option>Fire protection system design</option><option>Fire sprinkler design</option><option>Hydraulic calculations</option><option>Fire alarm and detection design</option><option>Fire suppression system design</option><option>Fire pump design and support</option><option>BOQ and material take-off</option><option>Shop drawings and as-built drawings</option><option>Technical consultation</option>
+   </optgroup>
+   <optgroup label="Equipment">
+    <option>Fire sprinklers</option><option>Valves and flow control</option><option>Fire hose and hydrant equipment</option><option>Fire pumps</option><option>Fire alarm and detection equipment</option><option>Fire suppression equipment</option><option>Fire extinguishers</option>
+   </optgroup>
+   <option>Other</option>
+  </select></div>
+ <div><label for="qty">Quantity</label><input id="qty" name="quantity" placeholder="If known"></div>
+ <div class="full"><label for="specs">Technical specifications</label><textarea id="specs" name="technical_specifications" placeholder="Model numbers, sizes, ratings, applicable standards, system type"></textarea></div>
+ <div class="full"><label for="msg">Message</label><textarea id="msg" name="message"></textarea></div>
+ <div class="full"><label for="files">Attach files</label><input id="files" name="attachment" type="file" multiple accept=".pdf,.dwg,.xls,.xlsx,.csv,.doc,.docx,.jpg,.jpeg,.png">
+  <p class="hint">BOQ, drawings, specifications, datasheets, photos, or product requirements. For large files, email them to <a href="mailto:info@lilinfireprotection.com">info@lilinfireprotection.com</a>.</p></div>
+ <div class="full"><button class="btn" type="submit">Submit Request</button></div>
+ <div class="full"><p id="status" role="status" aria-live="polite"></p></div>
+</form>
+</div></section>
+</main>
+
+<footer class="site"><div class="wrap">
+ <p>LILIN Fire Protection. Serving clients worldwide. <a href="mailto:info@lilinfireprotection.com">info@lilinfireprotection.com</a></p>
+ <p class="copy">© <span id="yr">2026</span> LILIN Fire Protection. All rights reserved.</p>
+</div></footer>
+<script src="main.js" defer></script>
+</body>
+</html>
