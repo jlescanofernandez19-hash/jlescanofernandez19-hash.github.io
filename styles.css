@@ -124,9 +124,29 @@ form.rfq{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem 1.25rem;max-width
 .cat .note{display:inline-block;margin-top:.75rem;color:var(--red)}
 @media(max-width:900px){.two{grid-template-columns:1fr}}
 
-.prose h2{margin:2.5rem 0 .75rem;font-size:1.5rem}.prose h2:first-child{margin-top:0}
-.prose h3{margin:1.5rem 0 .35rem;font-size:1.05rem}
-.prose p{margin:.75rem 0;max-width:68ch}.prose ul{padding-left:1.2rem;margin:.5rem 0 1rem}.prose li{margin:.25rem 0}
+
+.page-sec{padding:2.5rem 0 4rem}
+.prose>*:first-child{margin-top:0}
+.prose p{margin:.6rem 0 1rem;max-width:68ch}
+.prose ul.list{padding-left:1.2rem;margin:.4rem 0 1rem}.prose li{margin:.2rem 0;line-height:1.55}
+.prose li p{margin:0}
+.prose h2{font-size:1.4rem;margin:2.25rem 0 .6rem}
+.acc{border-top:1px solid var(--line)}.acc:last-of-type{border-bottom:1px solid var(--line)}
+.acc>summary{list-style:none;cursor:pointer;padding:1rem 2rem 1rem 0;position:relative}
+.acc>summary::-webkit-details-marker{display:none}
+.acc>summary::after{content:"+";position:absolute;right:.3rem;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--red);line-height:1}
+.acc[open]>summary::after{content:"\2212"}
+.acc>summary h2,.acc>summary h3{margin:0;font-size:1.12rem;display:inline}
+.acc.sub{border-top:1px solid var(--line);margin-left:0}.acc.sub:last-child{border-bottom:0}
+.acc.sub>summary{padding:.7rem 2rem .7rem 0}.acc.sub>summary h3{font-size:1rem;font-weight:500}
+.acc>.in{padding:0 0 1.25rem}
+.prose .blk{margin-top:2.25rem}
+.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0}
+.chips li{background:var(--mist);border-left:3px solid var(--red);padding:.35rem .8rem;font-size:.92rem;margin:0}
+.cols2{columns:2;column-gap:2.5rem}.cols2 li{break-inside:avoid}
+.covers{margin:1rem 0 1.5rem}.covers b{font-size:.95rem;display:block;margin-bottom:.2rem}
 .callout{background:var(--mist);border-left:3px solid var(--red);padding:.9rem 1rem}
-.important{border-top:1px solid var(--line);margin-top:2.5rem;padding-top:1rem;color:var(--steel);font-size:.95rem}
-.sticky{position:sticky;top:90px}.toc{list-style:none;padding:0;margin-top:.5rem;font-size:.9rem}.toc li{margin:.35rem 0}.toc a{text-decoration:none;color:var(--steel)}.toc a:hover{color:var(--red)}
+.important{margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--steel);font-size:.9rem}
+.important h2{font-size:1rem;margin:0 0 .4rem}
+.sticky{position:sticky;top:90px}
+@media(max-width:700px){.cols2{columns:1}}
