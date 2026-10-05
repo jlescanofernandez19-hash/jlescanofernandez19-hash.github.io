@@ -123,3 +123,10 @@ form.rfq{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem 1.25rem;max-width
 .plain{list-style:none;padding:0;margin-top:.5rem}.plain li{margin:.4rem 0}
 .cat .note{display:inline-block;margin-top:.75rem;color:var(--red)}
 @media(max-width:900px){.two{grid-template-columns:1fr}}
+
+.prose h2{margin:2.5rem 0 .75rem;font-size:1.5rem}.prose h2:first-child{margin-top:0}
+.prose h3{margin:1.5rem 0 .35rem;font-size:1.05rem}
+.prose p{margin:.75rem 0;max-width:68ch}.prose ul{padding-left:1.2rem;margin:.5rem 0 1rem}.prose li{margin:.25rem 0}
+.callout{background:var(--mist);border-left:3px solid var(--red);padding:.9rem 1rem}
+.important{border-top:1px solid var(--line);margin-top:2.5rem;padding-top:1rem;color:var(--steel);font-size:.95rem}
+.sticky{position:sticky;top:90px}.toc{list-style:none;padding:0;margin-top:.5rem;font-size:.9rem}.toc li{margin:.35rem 0}.toc a{text-decoration:none;color:var(--steel)}.toc a:hover{color:var(--red)}
